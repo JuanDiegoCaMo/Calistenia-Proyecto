@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Parcial 1 - Calistenia}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Solución con instrucciones para llevar objetos dados de una posición A a una posición B
+            
+        \vspace{1.5cm}
+            
+        \textbf{Juan Diego Cabrera Moncada}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Marzo de 2021
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+\newpage
+\section{Préambulo de la solución}\label{intro}
+Se recuerda a la persona que realice el desplazamiento de los objetos seleccionados que el estado inicial de las dos tarjetas de mismo peso y tamaño y de la hoja en blanco seleccionada es la siguiente (Para una mejor comprensión de este apartado apóyese con la visualización del estado inicial de los objetos):
+La tarjeta AT superpone a la tarjeta BT de tal forma que, al representar dos planos paralelos donde uno contenga al rectángulo formado por el largo y ancho de la tarjeta AT y otro al formado por el largo y ancho de la tarjeta BT, visto desde un punto C sólo es posible ver la tarjeta A, donde el punto C, al formar una línea recta (De cualquier magnitud siempre y cuando el punto C se encuentre a una mayor altura con respecto al nivel del mar que el punto O) con un punto O, contenido en el rectángulo descrito que forma AT y ubicado de tal forma que representa la intersección entre las diagonales de dicho rectángulo, se describa un eje perpendicular a los dos planos mencionados. Asimismo, la hoja en blanco superpone a las dos tarjetas de modo que el punto de intersección entre las diagonales del rectángulo formado por el largo y ancho de la hoja forma una línea recta que contiene al punto O y punto O' (Se halla con el mismo proceso que el punto O pero como referencia se toma el rectángulo descrito que forma BT) perpendicular a los dos planos mencionados inicialmente.
+\section{Descripción de la solución}\label{solución}
+Teniendo en cuenta que la condición para realizar este desplazamiento radica en el uso de sólo una de sus manos, antes de proceder con la realización de los pasos descritos a continuación decida la mano con la cual va a realizar este trabajo. Se recomienda que sea la mano con la cual considere que tiene mayor destreza en la motricidad fina. Asimismo, asuma que la hoja en blanco y la mesa están contenidas en el mismo plano en los próximos 3 párrafos. Durante todo este proceso, lo único que puede entrar en contacto con los objetos a desplazar de su posición inicial es lo que se describa a continuación.
+
+Una vez seleccionada, dado un rectángulo llamado HojaPapel que contiene el largo y ancho de la hoja en blanco, ubique su dedo pulgar de forma que éste haga contacto con la mesa hasta que se le diga lo contrario formando con el dedo pulgar una línea recta perpendicular al rectángulo HojaPapel y se encuentre a una distancia de un centímetro de uno de los vértices de dicho rectángulo, al cual llamaremos VertPapel. El punto exacto donde se ubica el dedo pulgar es uno en el cual, al trazar la diagonal del rectángulo HojaPapel que contiene a VertPapel y prolongarla, ésta contenga a su vez al punto donde se intercepta el dedo pulgar con la mesa.
+
+Ahora procedemos a ubicar el dedo índice de modo que haga contacto con el papel en un punto contenido en la diagonal del rectángulo HojaPapel elegida anteriormente de modo que la distancia entre VertPapel y el punto donde se intercepta el dedo pulgar con la mesa sea la misma que entre VertPapel y el punto donde se intercepta el dedo índice con el rectángulo HojaPapel. Tenga en cuenta que el dedo índice debe formar una línea recta perpendicular al rectángulo HojaPapel.
+
+Una vez ubicados los dos dedos (Pulgar e índice), proceda a ejercer la mayor presión posible sobre las superficies en las que se encuentran cada uno manteniendo a su vez la posición descrita anteriormente. Ahora proceda a desplazar su dedo pulgar hacia su dedo índice manteniendo la perpendicularidad de ambos dedos con respecto al rectángulo HojaPapel y teniendo en cuenta que los puntos de contacto entre los dedos y sus respectivas superficies se mantengan contenidos en la diagonal prolongada del rectángulo HojaPapel. Una vez ambos dedos hagan contacto, note que a su vez la hoja se ha doblado en una parte de modo que, al ejercer fuerza sobre dicha parte con los dedos usados hasta ahora, se puede proceder a desplazar la hoja de tal forma que ésta no toque en ningún punto a la mesa, en caso de que esto se pueda hacer de manera satisfactoria, hágalo; de lo contrario, proceda a repetir el proceso descrito en los párrafos anteriores hasta que se pueda realizar la acción mencionada.
+
+Una vez realizado este proceso, ubique la hoja en blanco sobre la mesa de tal forma que ésta no superponga a las tarjetas, se encuentre en su totalidad sobre la mesa (Con una de sus caras de mayor área haciendo contacto con la mesa) y a una distancia mínima de 8 centímetros de las tarjetas. Posterior a la ubicación de la hoja, suelte la hoja para quitar el contacto entre sus dedos y la hoja. Una vez hecho esto, identifique el lado del ancho del rectángulo formado por el largo y ancho de cada tarjeta como su lado superior mientras el otro lado del ancho del rectángulo se define como el inferior de modo que, para la tarjeta A (La que superpone a la otra), se hará referencia como lado superior A en futuras ocasiones y lo mismo para el nombramiento de los otros lados mencionados a continuación. Así, teniendo como referencia el plano que dibuja cada tarjeta con su largo y ancho, defina como lado izquierdo de la tarjeta el lado del rectángulo que forma la tarjeta que se encuentra al occidente del punto CentroTar (Punto donde se interceptan las diagonales del rectángulo formado por el largo y el ancho de su respectiva tarjeta), tomando como Norte el lado superior de su respectiva tarjeta. De la misma forma, nombramos como lado derecho de la tarjeta el lado que se encuentra al oriente del punto CentroTar.
+
+Ahora, proceda a agarrar las tarjetas de forma que todos los dedos mencionados a continuación hagan contacto con la mesa y a su vez con ambas tarjetas con sus respectivas yemas de la siguiente forma:
+El dedo índice, específicamente los puntos en los que hace contacto con cada tarjeta, equidista los vértices del lado superior de su respectiva tarjeta.
+El dedo anular, específicamente los puntos en los que hace contacto con cada tarjeta, equidista los vértices del lado derecho de la tarjeta mientras el dedo corazón es equidistante con respecto al punto en el cual intercepta el dedo anular a la respectiva tarjeta y el vértice que comparten el lado derecho y superior de la misma.
+El dedo pulgar, específicamente los puntos en los que hace contacto con cada tarjeta, es equidistante con respecto al punto medio del lado izquierdo de la tarjeta y al vértice que comparten el lado izquierdo y superior de la misma.
+El dedo meñique, específicamente los puntos en los que hace contacto con cada tarjeta, es equidistante con respecto a los vértices del lado inferior de la tarjeta.
+
+Una vez posicionados los dedos de manera satisfactoria, realice un movimiento circular con la yema del dedo índice como circunferencia, manteniendo el contacto de ésta con las tarjetas, en dirección opuesta de las manecillas de reloj hasta completar un ángulo de 45 grados con respecto a su posición anterior. Repita este mismo proceso para los dedos corazón, anular y pulgar. Después de esto, mantenga la misma cantidad de fuerza en direcciones opuestas entre el punto de contacto del dedo índice con las tarjetas y el punto de contacto del dedo meñique con las tarjetas, al mismo tiempo (Lo descrito a continuación implica que se libere el contacto entre los dedos, excepto el meñique, y la mesa), emplee una fuerza que permita realizar un movimiento circular con el dedo índice como empleador de dicha fuerza mientras que el dedo meñique sirve como punto de apoyo hasta que el plano que es paralelo a cualquiera de las dos tarjetas sea perpendicular al plano que contiene a la hoja en blanco. Mientras tanto, los dedos restantes servirán como apoyo para evitar la separación de las tarjetas de cualquier forma, dado que para los pasos siguientes se asume que están en contacto en su totalidad en la cara en la cual inicialmente estaban en contacto de la forma que se había descrito.
+
+Seguido de esto, ubique las tarjetas manteniendo los contactos anteriormente descritos a menos de que sea explícitamente mencionado, tanto de los dedos con las tarjetas como entre las tarjetas, de tal forma que se retire el contacto entre el dedo meñique y el lado inferior y, después, se ubica el lado inferior de ambas tarjetas de modo que éste haga contacto con la hoja, específicamente algún punto del lado inferior debe tocar el punto de intersección de las diagonales de la cara de la hoja con la cual hace contacto.
+
+Cabe recordar que durante todo este proceso descrito a continuación se debe mantener el contacto de los lados inferiores de las tarjetas con la hoja en blanco. Ahora, mantenga los puntos de contactos del dedo índice con las dos tarjetas mientras que se retira únicamente el punto de contacto de los otros dedos con la tarjeta B (La que estaba inicialmente bajo la tarjeta A). Seguido de esto, manteniendo dichos contactos, desplace la tarjeta A de tal forma que la distancia entre los lados inferiores de las tarjetas aumente a medida que se desplaza hasta el punto en el cual se forme un triángulo isósceles, cuyos ángulos iguales deben ser mínimo de 45 grados y máximo de 80 grados, entre el punto de contacto entre el dedo índice y las dos tarjetas, un punto de intersección entre la tarjeta A y la hoja y un punto de intersección entre la tarjeta B y la hoja, teniendo en cuenta que estos tres puntos se encuentran contenidos en el mismo plano. En caso de no obtener el resultado esperado, proceda a desplazar las tarjetas de tal forma que se encuentren nuevamente en el estado de superposición en el que se encontraban justo después de realizar la última interacción entre la hoja y sus dedos.
+\end{document}
